@@ -1,0 +1,252 @@
+.login-page-main-container {
+  position: relative;
+  width: 360px;
+  height: 640px;
+  background-color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .login-page-main-container {
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: #ffffff;
+  }
+}
+
+.login-page-image {
+  margin-left: 58px;
+}
+
+.login-lg-content {
+  display: none;
+}
+
+.login-lg-heading {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .login-page-image {
+    display: none;
+  }
+  .login-sm-content {
+    display: none;
+  }
+  .login-lg-content {
+    display: block;
+    position: absolute;
+    width: 456px;
+    height: 523px;
+    left: 165px;
+    top: 250px;
+    background: #fefeff;
+    box-shadow: 0px 8px 40px rgba(7, 7, 7, 0.08);
+    border-radius: 8px;
+  }
+  .login-lg-logo {
+    position: absolute;
+    width: 53px;
+    height: 43px;
+    left: 201px;
+    top: 48px;
+  }
+  .login-lg-heading {
+    display: block;
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    left: 188px;
+    top: 155px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #0f172a;
+  }
+
+  .login-lg-tasty-kitchen-title {
+    position: absolute;
+    height: 32px;
+    left: 142px;
+    right: 142px;
+    font-family: 'DM Sans';
+    font-style: italic;
+    top: 91px;
+    font-weight: 700;
+    font-size: 24px;
+
+    color: #f7931e;
+  }
+}
+
+.login-heading {
+  position: absolute;
+  width: 60px;
+  height: 32px;
+  left: 24px;
+  top: 296px;
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #0f172a;
+}
+
+.login-username-container {
+  position: absolute;
+  width: 312px;
+  height: 64px;
+  left: 24px;
+  top: 376px;
+}
+
+.login-label-text {
+  position: absolute;
+  width: 66px;
+  height: 16px;
+  left: 0px;
+  top: 0px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #475569;
+}
+
+.login-input-element {
+  position: absolute;
+  height: 40px;
+  left: 0%;
+  right: 0%;
+  top: 24px;
+  background: #e2e8f0;
+  border-radius: 2px;
+  border: none;
+}
+
+.login-password-container {
+  position: absolute;
+  width: 312px;
+  height: 64px;
+  left: 24px;
+  top: 464px;
+}
+
+.login-button {
+  position: absolute;
+  height: 40px;
+  left: 24px;
+  right: 24px;
+  top: 552px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background: #f7931e;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.login-lg-website-image {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .login-lg-username-container {
+    position: absolute;
+    width: 360px;
+    height: 64px;
+    left: 48px;
+    top: 259px;
+  }
+  .login-lg-password-container {
+    position: absolute;
+    width: 360px;
+    height: 64px;
+    left: 48px;
+    top: 347px;
+  }
+
+  .login-lg-failure-msg {
+    position: absolute;
+    left: 48px;
+    top: 398px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ef4444;
+  }
+
+  .login-lg-button {
+    position: absolute;
+    height: 40px;
+    left: 48px;
+    right: 48px;
+    top: 440px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background: #f7931e;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+  }
+  .login-lg-website-image {
+    display: block;
+    position: absolute;
+    width: 705px;
+    height: 1024px;
+    margin-left: 735px;
+    margin-top: 0px;
+  }
+}
+
+.login-failure-msg {
+  position: absolute;
+  left: 6.67%;
+  right: 28.33%;
+  top: 80.72%;
+  bottom: 16.87%;
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ef4444;
+}
+
+@media screen and (min-width: 768px) {
+  .login-failure-msg {
+    display: none;
+  }
+}

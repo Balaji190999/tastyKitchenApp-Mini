@@ -1,0 +1,93 @@
+.payment-successful-main {
+  position: relative;
+  width: 360px;
+  height: 640px;
+  background: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .payment-successful-main {
+    width: 1440px;
+    height: 1024px;
+  }
+}
+
+.payment-successful-content-main {
+  width: 360px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.payment-successful-image {
+  width: 40px;
+  height: 40px;
+}
+
+.payment-successful-text {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  color: #1e293b;
+}
+
+.payment-success-description {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #64748b;
+}
+
+.payment-success-page-go-to-home-button {
+  width: 131px;
+  height: 32px;
+  background: #f7931e;
+  border-radius: 8px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  margin-top: 16px;
+}
+
+.success-page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .payment-successful-content-main {
+    width: 1440px;
+    height: 900px;
+  }
+  .payment-successful-image {
+    width: 64px;
+    height: 64px;
+  }
+  .payment-successful-text {
+    font-size: 24px;
+    margin-top: 16px;
+  }
+  .payment-success-description {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 16px;
+  }
+  .payment-success-page-go-to-home-button {
+    margin-top: 24px;
+  }
+}

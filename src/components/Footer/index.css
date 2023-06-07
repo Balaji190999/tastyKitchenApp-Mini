@@ -1,0 +1,126 @@
+.footer-main-container {
+  position: absolute;
+
+  background: #0f172a;
+  width: 360px;
+  height: 256px;
+  margin-bottom: 5px;
+}
+
+.website-footer-logo {
+  position: absolute;
+  left: 84.51px;
+  top: 49.49px;
+  width: 37px;
+  height: 29px;
+}
+
+.footer-tasty-kitchen-heading {
+  position: absolute;
+  height: 24px;
+  left: 135px;
+  top: 52px;
+  font-family: 'DM Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  margin: 0px;
+}
+
+.footer-description {
+  position: absolute;
+  width: 280px;
+  height: 48px;
+  left: 40px;
+  top: 104px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-main-container {
+    width: 1440px;
+    height: 424px;
+  }
+  .website-footer-logo {
+    width: 53px;
+    height: 43px;
+    top: 100px;
+    left: 573px;
+  }
+  .footer-tasty-kitchen-heading {
+    font-size: 32px;
+    top: 110px;
+    left: 640px;
+  }
+  .footer-description {
+    width: 479px;
+    height: 64px;
+    left: 480px;
+    top: 168px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.pintrest-social-icon {
+  position: absolute;
+  font-size: 30px;
+  left: 96px;
+  top: 184px;
+  color: #ffffff;
+}
+
+.instagram-social-icon {
+  position: absolute;
+  font-size: 30px;
+  left: 144px;
+  top: 184px;
+  color: #ffffff;
+}
+
+.twitter-social-icon {
+  position: absolute;
+  font-size: 30px;
+  left: 192px;
+  top: 184px;
+  color: #ffffff;
+}
+
+.facebook-social-icon {
+  position: absolute;
+  font-size: 30px;
+  left: 240px;
+  top: 184px;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .pintrest-social-icon {
+    left: 576px;
+    top: 290px;
+    font-size: 48px;
+  }
+  .instagram-social-icon {
+    left: 656px;
+    top: 290px;
+    font-size: 48px;
+  }
+  .twitter-social-icon {
+    left: 736px;
+    top: 290px;
+    font-size: 48px;
+  }
+  .facebook-social-icon {
+    font-size: 48px;
+    left: 816px;
+    top: 290px;
+  }
+}

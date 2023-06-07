@@ -1,0 +1,101 @@
+.food-item {
+  width: 350px;
+  margin-bottom: 24px;
+  display: flex;
+}
+
+.food-item-image {
+  width: 160px;
+  height: 100px;
+  border-radius: 5.01961px;
+}
+
+.food-item-name {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  color: #334155;
+  margin: 0px;
+}
+
+.food-item-content-container {
+  width: 150px;
+  height: 94px;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.food-item-cost {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #334155;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+}
+
+.food-item-rating {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  color: #1e293b;
+  margin: 0px;
+}
+
+.food-item-star-icon {
+  color: #ffcc00;
+}
+
+.food-item-add-button {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5.7931px 11.5862px;
+  width: 42.17px;
+  height: 25;
+  border: 1.44828px solid #ffa412;
+  border-radius: 5.7931px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  background-color: #ffffff;
+  color: #ffa412;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .food-item-image {
+    width: 255px;
+    height: 150px;
+  }
+  .food-item-name {
+    font-size: 18px;
+  }
+  .food-item-cost {
+    font-size: 16px;
+  }
+  .food-item-rating {
+    font-size: 16px;
+  }
+  .food-item-add-button {
+    width: 50px;
+  }
+  .food-item-content-container {
+    height: 145px;
+    width: 200px;
+  }
+  .food-item {
+    width: 500px;
+  }
+}

@@ -1,0 +1,80 @@
+.cart-summery-order-total-heading {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3e4c59;
+  margin: 0px;
+}
+
+.cart-summery-main-container {
+  margin-top: 16px;
+}
+
+.cart-summery-total-price {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0px;
+  color: #3e4c59;
+  display: flex;
+  align-items: center;
+}
+
+.cart-summery-heading-price-container {
+  padding-left: 24px;
+  padding-right: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-summery-rupee-icon {
+  font-size: 18px;
+}
+
+.cart-summery-place-order-button {
+  width: 99px;
+  height: 32px;
+  background-color: #f7931e;
+  border-radius: 8px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  cursor: pointer;
+  color: #ffffff;
+  border: none;
+}
+
+.cart-summery-button-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 24px;
+  padding-left: 24px;
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .cart-summery-order-total-heading {
+    font-size: 24px;
+  }
+  .cart-summery-total-price {
+    font-size: 24px;
+  }
+  .cart-summery-rupee-icon {
+    font-size: 26px;
+  }
+  .cart-summery-heading-price-container {
+    padding-left: 24px;
+    padding-right: 80px;
+  }
+  .cart-summery-button-container {
+    padding-right: 80px;
+    margin-top: 35px;
+  }
+}
