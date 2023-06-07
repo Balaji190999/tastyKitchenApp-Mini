@@ -55,7 +55,9 @@ class HomePage extends Component {
     this.getRestaurantList()
   }
 
-  // API for Restaurant list
+  // Updated
+
+  // APIs for Restaurant list
   getRestaurantList = async () => {
     const {searchInput, activeOptionId, offset, limit} = this.state
     this.setState({apiStatusForRestaurant: apiStatusConstants.isLoading})
