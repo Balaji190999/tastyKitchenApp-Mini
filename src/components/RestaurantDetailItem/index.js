@@ -133,7 +133,7 @@ class RestaurantDetailItem extends Component {
     const {uniqueFoodList} = this.state
     // Store list in Local Storage
 
-    localStorage.setItem('cartFoodItem', JSON.stringify(uniqueFoodList))
+    localStorage.setItem('cartData', JSON.stringify(uniqueFoodList))
   }
 
   renderRestaurantDetailSuccess = () => {

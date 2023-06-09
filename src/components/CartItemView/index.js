@@ -49,7 +49,7 @@ class CartItemView extends Component {
     const {newQuantity} = this.state
     const {cost, imageUrl, name, id} = eachItemFood
     return (
-      <li data-testid="cartItem" className="cart-item">
+      <div data-testid="cartItem" className="cart-item">
         <img src={imageUrl} alt={name} className="cart-food-image" />
 
         <div className="cart-image-and-name-desktop-container">
@@ -78,11 +78,11 @@ class CartItemView extends Component {
             +
           </button>
         </div>
-
         <p className="cart-item-cost-desktop">
           <BiRupee className="cart-item-cost-rupee-icon" /> {cost * newQuantity}
           .00
         </p>
+
         <div className="cart-item-content-container">
           <h1 className="cart-item-name">{name}</h1>
           <div className="counter-button-container">
@@ -108,12 +108,12 @@ class CartItemView extends Component {
             </button>
           </div>
           <p className="cart-item-cost">
-            <BiRupee className="cart-item-cost-rupee-icon" />{' '}
+            <BiRupee className="cart-item-cost-rupee-icon" />
             {cost * newQuantity}
             .00
           </p>
         </div>
-      </li>
+      </div>
     )
   }
 }

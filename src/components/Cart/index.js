@@ -1,5 +1,6 @@
 import {Component} from 'react'
 import {Link} from 'react-router-dom'
+
 import Header from '../Header'
 import CartItemView from '../CartItemView'
 import CartSummery from '../CartSummery'
@@ -7,7 +8,7 @@ import Footer from '../Footer'
 import './index.css'
 
 const getCartListFromLocal = () => {
-  const stringifyData = localStorage.getItem('cartFoodItem')
+  const stringifyData = localStorage.getItem('cartData')
   if (stringifyData === null) {
     return []
   }
@@ -22,6 +23,7 @@ class Cart extends Component {
 
   componentDidMount() {
     this.getTotalPrice()
+    this.filterCartList()
   }
 
   getTotalPrice = () => {
@@ -36,7 +38,7 @@ class Cart extends Component {
   storeNewData = () => {
     const {cartList} = this.state
 
-    localStorage.setItem('cartFoodItem', JSON.stringify(cartList))
+    localStorage.setItem('cartData', JSON.stringify(cartList))
     this.getTotalPrice()
   }
 
@@ -56,6 +58,16 @@ class Cart extends Component {
       return {
         cartList: updatedCart,
       }
+    }, this.filterCartList)
+  }
+
+  filterCartList = () => {
+    this.setState(prevState => {
+      const {cartList} = prevState
+      const filterList = cartList.filter(item => item.quantity !== 0)
+      return {
+        cartList: filterList,
+      }
     }, this.storeNewData)
   }
 
@@ -64,7 +76,8 @@ class Cart extends Component {
     return (
       <div className="cart-main-bg">
         <Header />
-        {cartList.length === 0 ? (
+
+        {cartList.length === 0 && (
           <div className="emt-cart-main-container">
             <div className="emt-cart-content">
               <img
@@ -74,7 +87,7 @@ class Cart extends Component {
               />
               <h1 className="emt-cart-no-order-title">No Order Yet!</h1>
               <p className="emt-cart-description">
-                Your cart is empty Add something from menu.
+                Your cart is empty. Add something from the menu.
               </p>
               <Link to="/">
                 <button type="button" className="emt-cart-order-now-button">
@@ -83,7 +96,8 @@ class Cart extends Component {
               </Link>
             </div>
           </div>
-        ) : (
+        )}
+        {cartList.length !== 0 && (
           <div className="cart-content-container">
             <ul className="cart-food-list-container">
               <li className="cart-list-item-title">
@@ -93,20 +107,19 @@ class Cart extends Component {
                 </p>
                 <p className="cart-list-item-title-style">Price</p>
               </li>
-              {cartList.length >= 0
-                ? cartList.map(eachItem => (
-                    <CartItemView
-                      eachItemFood={eachItem}
-                      key={eachItem.id}
-                      updateLocalData={this.updateLocalData}
-                    />
-                  ))
-                : null}
+              {cartList.map(eachItem => (
+                <CartItemView
+                  key={eachItem.id}
+                  eachItemFood={eachItem}
+                  updateLocalData={this.updateLocalData}
+                />
+              ))}
             </ul>
             <hr className="cart-hr-line" />
             <CartSummery price={totalPrice} />
           </div>
         )}
+
         <div className="cart-footer-container">
           <Footer />
         </div>

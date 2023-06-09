@@ -8,7 +8,7 @@ const PopularRestaurantHeader = props => {
 
   return (
     <div className="home-sort-by-option-main-container">
-      <h1 className="home-sort-by-text">Sort by</h1>
+      <p className="home-sort-by-text">Sort by</p>
       <select
         value={activeOptionId}
         className="sort-by-select"

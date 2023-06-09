@@ -4,7 +4,11 @@ import './index.css'
 
 class Counter extends Component {
   state = {
-    quantity: 0,
+    quantity: 1,
+  }
+
+  componentDidMount() {
+    this.onUpdateQuantity()
   }
 
   onDecrement = () => {

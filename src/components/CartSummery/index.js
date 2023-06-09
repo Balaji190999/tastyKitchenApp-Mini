@@ -14,7 +14,7 @@ const CartSummery = props => {
   return (
     <div className="cart-summery-main-container">
       <div className="cart-summery-heading-price-container">
-        <h1 className="cart-summery-order-total-heading">Order Total : </h1>
+        <h1 className="cart-summery-order-total-heading">Order Total:</h1>
         <h1 className="cart-summery-total-price" data-testid="total-price">
           {' '}
           <BiRupee className="cart-summery-rupee-icon" /> {price}.00

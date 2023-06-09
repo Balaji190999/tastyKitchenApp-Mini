@@ -8,7 +8,6 @@ import './index.css'
 
 class RestaurantFoodItem extends Component {
   state = {
-    isActive: true,
     updatedQuantity: 0,
     cartFood: {},
   }
@@ -43,7 +42,7 @@ class RestaurantFoodItem extends Component {
 
   renderRestaurantFoodItem = () => {
     const {eachFoodItem} = this.props
-    const {isActive} = this.state
+    const {updatedQuantity} = this.state
     const {imageUrl, name, rating, cost, id, quantity} = eachFoodItem
 
     return (
@@ -59,7 +58,7 @@ class RestaurantFoodItem extends Component {
             <AiFillStar className="food-item-star-icon" /> {rating}
           </p>
           {/* Here the ADD button uses the toggle method */}
-          {isActive && (
+          {updatedQuantity === 0 && (
             <button
               type="button"
               className="food-item-add-button"
@@ -71,7 +70,9 @@ class RestaurantFoodItem extends Component {
             </button>
           )}
 
-          {!isActive && <Counter updateQuantity={this.updateQuantity} />}
+          {updatedQuantity !== 0 && (
+            <Counter updateQuantity={this.updateQuantity} />
+          )}
         </div>
       </li>
     )
@@ -86,7 +87,7 @@ class RestaurantFoodItem extends Component {
       quantity,
     }
 
-    this.setState({isActive: false, cartFood: selectedFoodItem})
+    this.setState({updatedQuantity: 1, cartFood: selectedFoodItem})
   }
 
   render() {

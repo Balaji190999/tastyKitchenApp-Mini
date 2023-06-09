@@ -54,33 +54,27 @@ class LoginPage extends Component {
 
     return (
       <div
-        data-testid="login-page-main-container"
+        data-data-testid="login-page-main-container"
         className="login-page-main-container"
       >
         <img
           src="https://res.cloudinary.com/dusy8b5fn/image/upload/v1684322579/Rectangle_1457mobile_login_ofi0gy.jpg"
           alt="website login"
           className="login-page-image"
-          data-testid="login-page-image"
         />
-        <div data-testid="login-sm-content" className="login-sm-content">
-          <h1 data-testid="login-heading" className="login-heading">
+        <div data-data-testid="login-sm-content" className="login-sm-content">
+          <p data-data-testid="login-heading" className="login-heading">
             Login
-          </h1>
+          </p>
           <form onSubmit={this.onSubmitForm}>
             <div
-              data-testid="login-username-container"
+              data-data-testid="login-username-container"
               className="login-username-container"
             >
-              <label
-                data-testid="login-label-text"
-                htmlFor="username"
-                className="login-label-text"
-              >
-                username
+              <label htmlFor="username" className="login-label-text">
+                USERNAME
               </label>
               <input
-                data-testid="login-input-element"
                 type="text"
                 id="username"
                 className="login-input-element"
@@ -88,18 +82,13 @@ class LoginPage extends Component {
               />
             </div>
             <div
-              data-testid="login-password-container"
+              data-data-testid="login-password-container"
               className="login-password-container"
             >
-              <label
-                data-testid="login-label-text"
-                htmlFor="password"
-                className="login-label-text"
-              >
-                password
+              <label htmlFor="password" className="login-label-text">
+                PASSWORD
               </label>
               <input
-                data-testid="login-input-element"
                 type="password"
                 id="password"
                 className="login-input-element"
@@ -107,79 +96,60 @@ class LoginPage extends Component {
               />
             </div>
             {errorMsgStatus && <p className="login-failure-msg">{errorMsg}</p>}
-            <button
-              data-testid="login-button"
-              type="submit"
-              className="login-button"
-            >
-              Button
+            <button type="submit" className="login-button">
+              Login
             </button>
           </form>
         </div>
-        <div data-testid="login-lg-content" className="login-lg-content">
+        <div data-data-testid="login-lg-content" className="login-lg-content">
           <img
             src="https://res.cloudinary.com/dusy8b5fn/image/upload/v1684392912/Login-icon_ocbvwi.jpg"
             alt="website logo"
             className="login-lg-logo"
-            data-testid="login-lg-logo"
           />
-          <p
-            data-testid="login-lg-tasty-kitchen-title"
+          <h1
+            data-data-testid="login-lg-tasty-kitchen-title"
             className="login-lg-tasty-kitchen-title"
           >
             Tasty Kitchens
-          </p>
-          <h1 data-testid="login-lg-heading" className="login-lg-heading">
+          </h1>
+          <h1 data-data-testid="login-lg-heading" className="login-lg-heading">
             Login
           </h1>
           <form onSubmit={this.onSubmitForm}>
             <div
-              data-testid="login-lg-username-container"
+              data-data-testid="login-lg-username-container"
               className="login-lg-username-container"
             >
-              <label
-                data-testid="login-label-text"
-                htmlFor="usernameLg"
-                className="login-label-text"
-              >
-                username
+              <label htmlFor="usernameLg" className="login-label-text">
+                USERNAME
               </label>
               <input
                 type="text"
                 id="usernameLg"
                 className="login-input-element"
-                data-testid="login-input-element"
                 onChange={this.onChangeUsername}
               />
             </div>
             <div
-              data-testid="login-lg-password-container"
+              data-data-testid="login-lg-password-container"
               className="login-lg-password-container"
             >
-              <label
-                data-testid="login-label-text"
-                htmlFor="passwordLg"
-                className="login-label-text"
-              >
-                password
+              <label htmlFor="passwordLg" className="login-label-text">
+                PASSWORD
               </label>
               <input
                 type="password"
                 id="passwordLg"
                 className="login-input-element"
-                data-testid="login-input-element"
                 onChange={this.onChangePassword}
               />
             </div>
             {errorMsgStatus && (
               <p className="login-lg-failure-msg">{errorMsg}</p>
             )}
-            <button
-              data-testid="login-lg-button"
-              type="submit"
-              className="login-lg-button"
-            >
-              Button
+            <button type="submit" className="login-lg-button">
+              Login
             </button>
           </form>
         </div>
@@ -187,7 +157,6 @@ class LoginPage extends Component {
           src="https://res.cloudinary.com/dusy8b5fn/image/upload/v1684392916/Login-large-image_milxx6.png"
           alt="website logo"
           className="login-lg-website-image"
-          data-testid="login-lg-website-image"
         />
       </div>
     )
